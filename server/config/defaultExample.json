@@ -1,0 +1,16 @@
+{
+    "port": 8080,
+    "email": "",
+    "emailPassword": "",
+    "jwt": {
+        "key": "",
+        "expireDate": "1w"
+    },
+    "development": {
+        "database": "brillo",
+        "user": "postgres",
+        "password": "",
+        "port": 5432,
+        "host": "localhost"
+    }
+}

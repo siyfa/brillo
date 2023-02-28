@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "seed": "npx knex seed:run --knexfile ./db/knexfile.js",
+    "make-seed": "npx knex seed:make dev --knexfile ./db/knexfile.js",
+    "migration": "npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "rollback": "npx knex migrate:rollback --knexfile ./db/knexfile.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "joi": "^17.8.3",
+    "joi-password-complexity": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.3.4",
+    "nodemailer": "^6.9.1",
+    "objection": "^3.0.1",
+    "pg": "^8.9.0",
+    "twilio": "^4.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
